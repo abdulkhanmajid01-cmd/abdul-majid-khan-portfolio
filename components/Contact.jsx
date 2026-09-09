@@ -62,56 +62,59 @@ export default function Contact() {
             viewport={viewportOnce}
             className="flex flex-col gap-4"
           >
-            <div className="flex items-start gap-3 rounded-2xl border border-line bg-white p-5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
+            <a
+              href="mailto:abdulkhanmajid01@gmail.com"
+              className="group flex items-start gap-3 rounded-2xl border border-line bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-ink/20 hover:shadow-card"
+              aria-label="Send an email to abdulkhanmajid01@gmail.com"
+            >
+              <span className="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors duration-300 group-hover:bg-accent group-hover:text-white">
                 <Mail className="h-5 w-5" />
               </span>
-              <div>
-                <p className="text-[13px] text-muted">Email</p>
-                <a
-                  href="mailto:YOUR_EMAIL"
-                  className="text-[15px] font-semibold text-ink hover:text-accent"
-                >
-                  YOUR_EMAIL
-                </a>
-              </div>
-            </div>
+              <span className="flex flex-col">
+                <span className="text-[13px] text-muted">Email</span>
+                <span className="text-[15px] font-semibold text-ink transition-colors duration-300 group-hover:text-accent">
+                  abdulkhanmajid01@gmail.com
+                </span>
+              </span>
+            </a>
 
-            <div className="flex items-start gap-3 rounded-2xl border border-line bg-white p-5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-coral/10 text-coral">
+            <a
+              href="https://github.com/abdulkhanmajid01-cmd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-start gap-3 rounded-2xl border border-line bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-ink/20 hover:shadow-card"
+              aria-label="Visit GitHub profile"
+            >
+              <span className="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-coral/10 text-coral transition-colors duration-300 group-hover:bg-coral group-hover:text-white">
                 <Github className="h-5 w-5" />
               </span>
-              <div>
-                <p className="text-[13px] text-muted">GitHub</p>
-                <a
-                  href="https://github.com/abdulkhanmajid01-cmd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[15px] font-semibold text-ink hover:text-accent"
-                >
-                  abdu...-cmd
-                  <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
-              </div>
-            </div>
+              <span className="flex flex-col">
+                <span className="text-[13px] text-muted">GitHub</span>
+                <span className="inline-flex items-center gap-1 text-[15px] font-semibold text-ink transition-colors duration-300 group-hover:text-accent">
+                  Github
+                  <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </span>
+              </span>
+            </a>
 
-            <div className="flex items-start gap-3 rounded-2xl border border-line bg-white p-5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-highlight/15 text-highlight">
+            <a
+              href="https://www.linkedin.com/in/abdul-majid-khan-29207431a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-start gap-3 rounded-2xl border border-line bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-ink/20 hover:shadow-card"
+              aria-label="Visit LinkedIn profile"
+            >
+              <span className="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-highlight/15 text-highlight transition-colors duration-300 group-hover:bg-highlight group-hover:text-white">
                 <Linkedin className="h-5 w-5" />
               </span>
-              <div>
-                <p className="text-[13px] text-muted">LinkedIn</p>
-                <a
-                  href="https://www.linkedin.com/in/YOUR_LINKEDIN"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[15px] font-semibold text-ink hover:text-accent"
-                >
-                  YOUR_LINKEDIN
-                  <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
-              </div>
-            </div>
+              <span className="flex flex-col">
+                <span className="text-[13px] text-muted">LinkedIn</span>
+                <span className="inline-flex items-center gap-1 text-[15px] font-semibold text-ink transition-colors duration-300 group-hover:text-accent">
+                  LINKEDIN
+                  <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </span>
+              </span>
+            </a>
           </motion.div>
 
           {/* Form */}
